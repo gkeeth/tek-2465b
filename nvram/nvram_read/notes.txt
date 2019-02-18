@@ -1,0 +1,12 @@
+1. Put original nvram into reader
+
+2. Read old NVRAM from device
+
+# minipro -p "DS1225 (RW)" -r original_nvram_20190218.bin
+
+3. put new nvram into reader
+
+4. program image into old nvram
+
+
+

@@ -1,0 +1,11 @@
+programming:
+# minipro -p "DS1225 (RW)" -w <filename.bin>
+
+this will probably give a warning "Overcurrent protection! Erase failed!"
+but the erase is probably fine so try again but without erasing
+# minipro -p "DS1225 (RW)" -w <filename.bin> -e
+
+then readback what was programmed and make sure it matches
+probably unnecessary (there's a verification step after programming) but makes 
+me feel better
+# minipro -p "DS1225 (RW)" -r <filename_readback.bin>
